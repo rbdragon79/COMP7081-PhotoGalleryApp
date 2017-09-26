@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a00834304.photogalleryapp.CropImageActivity">
+
+    <ImageView
+        android:id="@+id/imgFull"
+        android:layout_width="216dp"
+        android:layout_height="324dp"
+        app:srcCompat="@drawable/full"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnSquare"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgFull"
+        android:layout_marginTop="10dp"
+        android:text="Square"
+        android:onClick="onClick"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn4by3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSquare"
+        android:text="4:3"
+        android:onClick="onClick"
+        android:layout_alignLeft="@+id/btnSquare"
+        android:layout_alignStart="@+id/btnSquare" />
+
+    <Button
+        android:id="@+id/btn16by9"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn4by3"
+        android:text="16:9"
+        android:onClick="onClick"
+        android:layout_alignLeft="@+id/btnSquare"
+        android:layout_alignStart="@+id/btnSquare" />
+
+</RelativeLayout>

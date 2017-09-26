@@ -6,39 +6,153 @@
     android:layout_height="match_parent"
     tools:context="com.a00834304.photogalleryapp.MainActivity">
 
-    <Button
-        android:id="@+id/btnCamera"
+    <ImageView
+        android:id="@+id/img_tn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_tn02"
+        android:layout_toLeftOf="@+id/img_tn02"
+        android:layout_toStartOf="@+id/img_tn02"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/tn01" />
+
+    <ImageView
+        android:id="@+id/img_tn02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/tn02" />
+
+    <ImageView
+        android:id="@+id/img_tn03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_tn02"
+        android:layout_toRightOf="@+id/img_tn02"
+        android:layout_toEndOf="@+id/img_tn02"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        app:srcCompat="@drawable/tn03" />
+
+    <ImageView
+        android:id="@+id/img_tn04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_tn05"
+        android:layout_toLeftOf="@+id/img_tn05"
+        android:layout_toStartOf="@+id/img_tn05"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        app:srcCompat="@drawable/tn04" />
+
+    <ImageView
+        android:id="@+id/img_tn05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_tn02"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/tn05" />
+
+    <ImageView
+        android:id="@+id/img_tn06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_tn05"
+        android:layout_toRightOf="@+id/img_tn05"
+        android:layout_toEndOf="@+id/img_tn05"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        app:srcCompat="@drawable/tn06" />
+
+    <ImageView
+        android:id="@+id/img_tn07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_tn08"
+        android:layout_toLeftOf="@+id/img_tn08"
+        android:layout_toStartOf="@+id/img_tn08"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        app:srcCompat="@drawable/tn07" />
+
+    <ImageView
+        android:id="@+id/img_tn08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_tn05"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/tn08" />
+
+    <ImageView
+        android:id="@+id/img_tn09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_tn08"
+        android:layout_toRightOf="@+id/img_tn08"
+        android:layout_toEndOf="@+id/img_tn08"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        app:srcCompat="@drawable/tn09" />
+
+    <ImageView
+        android:id="@+id/img_tn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_tn11"
+        android:layout_toLeftOf="@+id/img_tn11"
+        android:layout_toStartOf="@+id/img_tn11"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        app:srcCompat="@drawable/tn10" />
+
+    <ImageView
+        android:id="@+id/img_tn11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_tn08"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/tn11" />
+
+    <ImageView
+        android:id="@+id/img_tn12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_tn11"
+        android:layout_toRightOf="@+id/img_tn11"
+        android:layout_toEndOf="@+id/img_tn11"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        app:srcCompat="@drawable/tn12" />
+
+    <ImageView
+        android:id="@+id/imgCamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="65dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginStart="75dp"
-        android:text="Camera" />
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        app:srcCompat="@drawable/camera" />
 
-    <Button
-        android:id="@+id/btnSearch"
+    <ImageView
+        android:id="@+id/imgSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/btnCamera"
-        android:layout_marginEnd="75dp"
-        android:layout_marginRight="75dp"
-        android:text="Search" />
-
-    <TextView
-        android:id="@+id/txtThumbs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="128dp"
-        android:textAlignment="center"
-        android:ems="10"
-        android:textSize="24sp"
-        android:text="Thumbnail View" />
+        android:layout_alignTop="@+id/imgCamera"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/search" />
 
 </RelativeLayout>

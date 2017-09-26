@@ -16,7 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".SingleImageActivity" />
+        <activity android:name=".EditImageActivity" />
+        <activity android:name=".CropImageActivity" />
+        <activity android:name=".ResizeImageActivity" />
+        <activity android:name=".EditConfirmActivity" />
+        <activity android:name=".KeywordSearchActivity" />
+        <activity android:name=".DateSearchActivity"></activity>
     </application>
 
 </manifest>

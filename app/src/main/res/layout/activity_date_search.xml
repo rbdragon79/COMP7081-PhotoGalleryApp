@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.a00834304.photogalleryapp.SearchActivity">
+    tools:context="com.a00834304.photogalleryapp.DateSearchActivity">
 
     <ImageView
         android:id="@+id/img_tn01"
@@ -48,26 +48,35 @@
         android:textAlignment="center"
         android:ems="10"
         android:textSize="24sp"
-        android:text="Search By" />
+        android:text="SEARCH BY DATE:" />
 
     <Button
-        android:id="@+id/btnKeyword"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Keyword"
-        android:onClick="onClick"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/btnFrom"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/txtSearchBy"
+        android:layout_marginTop="30dp"
+        android:text="FROM"
+        android:layout_alignLeft="@+id/img_tn01"
+        android:layout_alignStart="@+id/img_tn01" />
 
     <Button
-        android:id="@+id/btnDate"
+        android:id="@+id/btnTo"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:text="TO"
+        android:layout_alignTop="@+id/btnFrom"
+        android:layout_alignLeft="@+id/img_tn03"
+        android:layout_alignStart="@+id/img_tn03" />
+
+    <Button
+        android:id="@+id/btnSearch"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Date"
+        android:text="SEARCH"
         android:onClick="onClick"
-        android:layout_alignTop="@+id/btnKeyword"
-        android:layout_alignLeft="@+id/btnKeyword"
-        android:layout_alignStart="@+id/btnKeyword"
-        android:layout_marginTop="60dp" />
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>
