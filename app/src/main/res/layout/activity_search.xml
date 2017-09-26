@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a00834304.photogalleryapp.SearchActivity">
+
+    <TextView
+        android:id="@+id/txtSearchThumbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:ems="10"
+        android:textSize="24sp"
+        android:text="Thumbnail View" />
+
+    <TextView
+        android:id="@+id/txtSearchBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="185dp"
+        android:textAlignment="center"
+        android:ems="10"
+        android:textSize="24sp"
+        android:text="Search By" />
+
+    <Button
+        android:id="@+id/btnKeyword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Keyword"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_alignTop="@+id/btnKeyword"
+        android:layout_alignLeft="@+id/btnKeyword"
+        android:layout_alignStart="@+id/btnKeyword"
+        android:layout_marginTop="60dp" />
+
+</RelativeLayout>
