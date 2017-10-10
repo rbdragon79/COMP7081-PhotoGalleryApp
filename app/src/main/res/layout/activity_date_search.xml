@@ -7,36 +7,13 @@
     tools:context="com.a00834304.photogalleryapp.DateSearchActivity">
 
     <ImageView
-        android:id="@+id/img_tn01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/img_tn02"
-        android:layout_toLeftOf="@+id/img_tn02"
-        android:layout_toStartOf="@+id/img_tn02"
-        android:layout_marginRight="20dp"
-        android:layout_marginEnd="20dp"
-        android:onClick="goBig"
-        app:srcCompat="@drawable/tn01" />
-
-    <ImageView
-        android:id="@+id/img_tn02"
+        android:id="@+id/imgResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/tn02" />
-
-    <ImageView
-        android:id="@+id/img_tn03"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/img_tn02"
-        android:layout_toRightOf="@+id/img_tn02"
-        android:layout_toEndOf="@+id/img_tn02"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp"
-        app:srcCompat="@drawable/tn03" />
+        app:srcCompat="@drawable/blank" />
 
     <TextView
         android:id="@+id/txtSearchBy"
@@ -44,30 +21,21 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="185dp"
+        android:layout_marginTop="250dp"
         android:textAlignment="center"
         android:ems="10"
         android:textSize="24sp"
         android:text="SEARCH BY DATE:" />
 
-    <Button
-        android:id="@+id/btnFrom"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/txtSearchBy"
-        android:layout_marginTop="30dp"
-        android:text="FROM"
-        android:layout_alignLeft="@+id/img_tn01"
-        android:layout_alignStart="@+id/img_tn01" />
-
-    <Button
-        android:id="@+id/btnTo"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:text="TO"
-        android:layout_alignTop="@+id/btnFrom"
-        android:layout_alignLeft="@+id/img_tn03"
-        android:layout_alignStart="@+id/img_tn03" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Format is yyyy-mm-dd"/>
 
     <Button
         android:id="@+id/btnSearch"
